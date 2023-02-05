@@ -1,0 +1,46 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#intro {
+  background-image: url(../images/background.jpg);
+  border: 0;
+  border-radius: .55rem;
+  color: white;
+  text-align: left;
+}
+
+#lnkSignUp {
+  padding: 15px 30px 15px 30px;
+  font-size: larger;
+}
+
+#specials{
+  text-align: left;
+  margin-top: 1.5rem!important;
+}
+
+#specials hr{
+  border: 1px solid black; opacity: 1;
+}
+
+.card{
+  border-radius: 0.85rem;
+  padding-top: 15px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}

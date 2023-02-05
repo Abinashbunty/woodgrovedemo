@@ -1,0 +1,107 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <section id="intro" class="card fadeIn wow" style="animation-name: fadeIn; visibility: visible;">
+        <div class="card-body my-5 px-5 py-5">
+            <h1 class="mb-4">
+                <strong>Save Time</strong>
+            </h1>
+            <p>
+                <strong>Let us do the grocery shopping for you</strong>
+            </p>
+            <a class="btn btn-success" id="lnkSignUp" href="/MicrosoftIdentity/Account/SignIn">SIGN UP</a>
+        </div>
+    </section>
+
+
+    <section class="section pt-4" id="specials">
+        <h4 class="font-weight-bold mt-4 title-1" style="letter-spacing: 2px;">
+            <strong>SPECIALS</strong>
+        </h4>
+        <hr class="mb-5">
+    </section>
+
+    <!--First line of products-->
+    <div class="row" style="padding-top: 5px;">
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="~/images/apples.jpg" style="height: 300px;" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Apples</h5>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="#" class="btn btn-success"><i class="bi bi-cart3"></i> ADD TO CART</a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="~/images/bananas.jpg" style="height: 300px;" alt="">
+                    <h5 class="card-title">Bananas</h5>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="#" class="btn btn-success"><i class="bi bi-cart3"></i> ADD TO CART</a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="~/images/oranges.jpg" style="height: 300px;" alt="">
+                    <h5 class="card-title">Oranges</h5>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="#" class="btn btn-success"><i class="bi bi-cart3"></i> ADD TO CART</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Second line of products-->
+    <div class="row" style="padding-top: 50px;">
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <img class="card-img-top" src="~/images/milk.jpg" style="height: 300px;" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Milk</h5>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="#" class="btn btn-success"><i class="bi bi-cart3"></i> ADD TO CART</a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="~/images/peanut.jpg" style="height: 300px;" alt="">
+                    <h5 class="card-title">Bulk nuts</h5>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="#" class="btn btn-success"><i class="bi bi-cart3"></i> ADD TO CART</a>
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <img class="card-img-top" src="~/images/bread.jpg" style="height: 300px;" alt="">
+                    <h5 class="card-title">Bread</h5>
+                    @if (User.Identity?.IsAuthenticated == true)
+                    {
+                        <a href="#" class="btn btn-success"><i class="bi bi-cart3"></i> ADD TO CART</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
